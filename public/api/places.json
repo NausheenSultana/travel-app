@@ -1,0 +1,50 @@
+[
+  {
+    "imgSrc": "images/place1.png",
+    "title": "Khartoum",
+    "desc": "Aenean lacinia bibendum nulla sed consectetur.Aenean lacinia bibendum nulla sed consectetur.",
+    "capsuleList": ["baghdad", "turkey"]
+  },
+  {
+    "imgSrc": "images/place2.png",
+    "title": "Khartoum",
+    "desc": "Aenean lacinia bibendum nulla sed consectetur.Aenean lacinia bibendum nulla sed consectetur.",
+    "capsuleList": ["baghdad", "turkey"]
+  },
+  {
+    "imgSrc": "images/place3.png",
+    "title": "Khartoum",
+    "desc": "Aenean lacinia bibendum nulla sed consectetur.Aenean lacinia bibendum nulla sed consectetur. Aenean lacinia bibendum nulla sed consectetur.Aenean lacinia bibendum nulla sed consectetur",
+    "capsuleList": ["baghdad", "turkey"]
+  },
+  {
+    "imgSrc": "images/place4.png",
+    "title": "Khartoum",
+    "desc": "Aenean lacinia bibendum nulla sed consectetur.Aenean lacinia bibendum nulla sed consectetur. Aenean lacinia bibendum nulla sed consectetur",
+    "capsuleList": ["baghdad", "turkey"]
+  },
+  {
+    "imgSrc": "images/place5.png",
+    "title": "Khartoum",
+    "desc": "Aenean lacinia bibendum nulla sed consectetur.Aenean lacinia bibendum nulla sed consectetur.",
+    "capsuleList": ["baghdad", "turkey"]
+  },
+  {
+    "imgSrc": "images/place6.png",
+    "title": "Khartoum",
+    "desc": "Aenean lacinia bibendum nulla sed consectetur.Aenean lacinia bibendum nulla sed consectetur.",
+    "capsuleList": ["baghdad", "turkey"]
+  },
+  {
+    "imgSrc": "images/place7.png",
+    "title": "Khartoum",
+    "desc": "Aenean lacinia bibendum nulla sed consectetur.Aenean lacinia bibendum nulla sed consectetur. Aenean lacinia bibendum nulla sed. Aenean lacinia bibendum nulla sed.",
+    "capsuleList": ["baghdad", "turkey"]
+  },
+  {
+    "imgSrc": "images/place8.png",
+    "title": "Khartoum",
+    "desc": "Aenean lacinia bibendum nulla sed consectetur.Aenean lacinia bibendum nulla sed consectetur.",
+    "capsuleList": ["baghdad", "turkey"]
+  }
+]

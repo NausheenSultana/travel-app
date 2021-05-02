@@ -1,0 +1,430 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+$bg-img: url("https://marvel-live.freetls.fastly.net/canvas/2020/9/8844bfe11afa4801a5a6422d98339659?quality=95&fake=.png");
+$purpleHue: linear-gradient(135deg, #2b2ecf 0%, #652bcf 100%);
+
+body {
+  font-family: Poppins;
+  background-color: #e7edf6;
+  .wrapper {
+    padding: 30px;
+    @media (max-width: 500px) {
+      padding: 0;
+    }
+
+    .sidenav {
+      height: 100%;
+      border-radius: 20px;
+      width: 100px;
+      height: 950px;
+      position: fixed;
+      z-index: 1;
+      background-image: $purpleHue;
+      transition: 0.5s ease;
+      overflow-x: hidden;
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      @media (max-width: 500px) {
+        display: none;
+      }
+      a {
+        margin-bottom: 55px;
+      }
+      a:last-child {
+        position: absolute;
+        margin-bottom: 0px;
+        bottom: 50px;
+      }
+    }
+    .bottomNav {
+      border-radius: 20px;
+      width: 300px;
+      height: 60px;
+      position: fixed;
+      z-index: 1;
+      background-image: $purpleHue;
+      transition: 0.5s ease;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      bottom: 50px;
+      left: 50%;
+      margin-left: -150px;
+      @media (min-width: 500px) {
+        display: none;
+      }
+    }
+    .mainContent {
+      margin-left: 134px;
+      @media (max-width: 500px) {
+        margin-left: 0;
+      }
+
+      .listCard {
+        background-color: #ffffff;
+        border-radius: 20px;
+        width: 305px;
+        height: 80px;
+        display: flex;
+        flex-direction: initial;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 20px auto;
+
+        .iconLine {
+          display: flex;
+
+          img:last-child {
+            margin-left: 10px;
+          }
+        }
+        .listCardTitle {
+          color: #2b2ecf;
+          font-family: Poppins;
+          font-size: 24px;
+          line-height: 29px;
+          width: 135px;
+          text-align: left;
+        }
+        .listCardImg {
+          width: 60px;
+          height: 60px;
+          border-radius: 10px;
+        }
+      }
+
+      .mobileBG {
+        background-image: $bg-img;
+        background-size: 100%;
+        height: 450px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 29px;
+
+        .rectangle {
+          background-color: #ccc;
+          border-radius: 30px;
+          width: 95px;
+          height: 40px;
+          position: absolute;
+          left: 50%;
+          margin-left: -55px;
+          bottom: -27px;
+          display: flex;
+          flex-direction: initial;
+          justify-content: space-between;
+          align-items: center;
+          padding: 11px 10px;
+
+          button {
+            background-color: transparent;
+            border: none;
+            border-radius: 50%;
+            padding: 0px;
+            height: 45px;
+            width: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+        @media (min-width: 500px) {
+          display: none;
+        }
+
+        img {
+          margin: 20px;
+          margin-top: 40px;
+        }
+        img:first-child {
+          margin: 20px;
+        }
+      }
+      .cartBox {
+        display: none;
+        width: 300px;
+        height: 100px;
+        background-image: $purpleHue;
+        color: white;
+        width: 427px;
+        bottom: 100px;
+        left: 50%;
+        margin-left: -212px;
+        padding: 20px;
+        border-radius: 56px;
+        position: fixed;
+        z-index: 1;
+        height: 40px;
+        justify-content: space-around;
+        align-items: center;
+
+        .iconBox {
+          display: "flex";
+
+          img {
+            margin-right: 14px;
+          }
+        }
+        .topLine {
+          display: flex;
+          color: #ffffff;
+          font-size: 24px;
+          line-height: 34px;
+          text-align: left;
+          align-items: flex-start;
+          margin: 0;
+
+          img {
+            margin-right: 14px;
+          }
+        }
+      }
+      .project-allocations-search-heading {
+        color: #ff0066;
+        font-family: Poppins;
+        font-size: 36px;
+        line-height: 43px;
+        text-align: left;
+        font-weight: bolder;
+        margin: 40px 0px;
+        @media (max-width: 500px) {
+          position: absolute;
+          color: #ffffff;
+          font-family: Poppins;
+          font-size: 42px;
+          line-height: 50px;
+          text-align: center;
+          top: 100px;
+          text-shadow: 2px 2px #222;
+        }
+      }
+      .listWrap {
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        @media (max-width: 500px) {
+          display: flex;
+          flex-direction: column;
+        }
+        .card {
+          background-color: #ffffff;
+          border-radius: 20px;
+          width: 285px;
+          min-height: 352px;
+          padding: 10px;
+          margin: 20px;
+          cursor: pointer;
+          display: inline-block;
+          margin-right: 40px;
+          margin-left: 0;
+          position: relative;
+          transition: all 500ms ease;
+
+          @media (max-width: 500px) {
+            margin: 20px auto;
+          }
+
+          &:hover {
+            box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+              0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+              0 12.5px 10px rgba(0, 0, 0, 0.06),
+              0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+              0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+              0 100px 80px rgba(0, 0, 0, 0.12);
+            background-image: $purpleHue;
+          }
+          &:hover > .oval {
+            display: inline;
+          }
+          &:hover > .card-title,
+          &:hover > .card-content {
+            color: white;
+          }
+
+          input[type="checkbox"] + label {
+            position: relative;
+            display: flex;
+            margin: 0.6em 0;
+            align-items: center;
+            color: #9e9e9e;
+            transition: color 250ms #37f6b8;
+          }
+          input[type="checkbox"] + label > ins {
+            position: absolute;
+            display: block;
+            bottom: 0;
+            left: 2em;
+            height: 0;
+            width: 100%;
+            overflow: hidden;
+            text-decoration: none;
+            transition: height 300ms #37f6b8;
+          }
+          input[type="checkbox"] + label > ins > i {
+            position: absolute;
+            bottom: 0;
+            font-style: normal;
+            color: #37f6b8;
+          }
+          input[type="checkbox"] + label > span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 1em;
+            width: 1em;
+            height: 1em;
+            background: #37f6b8;
+            border: 2px solid #9e9e9e;
+            cursor: pointer;
+            transition: all 250ms #37f6b8;
+          }
+
+          input[type="checkbox"] + label:hover,
+          input[type="checkbox"]:focus + label {
+            color: #fff;
+          }
+          input[type="checkbox"] + label:hover > span,
+          input[type="checkbox"]:focus + label > span {
+            background: rgba(255, 255, 255, 0.1);
+          }
+          input[type="checkbox"]:checked + label > ins {
+            height: 100%;
+          }
+
+          input[type="checkbox"]:checked + label > span {
+            border: 1em solid #37f6b8;
+            background: #37f6b8;
+            animation: shrink-bounce 200ms #37f6b8;
+          }
+          input[type="checkbox"]:checked + label > span:before {
+            content: "";
+            position: absolute;
+            top: 0.6em;
+            left: 0.2em;
+            border-right: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            transform: rotate(45deg);
+            transform-origin: 0% 100%;
+            animation: checkbox-check 125ms 250ms #37f6b8 forwards;
+          }
+
+          @keyframes shrink-bounce {
+            0% {
+              transform: scale(1);
+            }
+            33% {
+              transform: scale(0.85);
+            }
+            100% {
+              transform: scale(1);
+            }
+          }
+          @keyframes checkbox-check {
+            0% {
+              width: 0;
+              height: 0;
+              border-color: #212121;
+              transform: translate3d(0, 0, 0) rotate(45deg);
+            }
+            33% {
+              width: 0.2em;
+              height: 0;
+              transform: translate3d(0, 0, 0) rotate(45deg);
+            }
+            100% {
+              width: 0.2em;
+              height: 0.5em;
+              border-color: #212121;
+              transform: translate3d(0, -0.5em, 0) rotate(45deg);
+            }
+          }
+          .oval {
+            border: 2px solid #ffffff;
+            border-radius: 50%;
+            opacity: 0.800000011920929;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            z-index: 1;
+            top: 17px;
+            right: 19px;
+            display: none;
+            background: #37f6b8 !important;
+            cursor: pointer;
+          }
+          .blackButton {
+            background-color: black !important;
+            color: white;
+          }
+
+          .whiteButton {
+            background-color: white !important;
+            color: black;
+          }
+          .tileImg {
+            width: 285px !important;
+            height: 149px !important;
+            border-radius: 10px;
+          }
+          .card-title {
+            color: #2b2ecf;
+            font-family: Poppins;
+            font-size: 24px;
+            line-height: 29px;
+            width: 265px;
+            text-align: left;
+          }
+          .card-content {
+            color: #7f8a9c;
+            font-family: OpenSans;
+            font-size: 18px;
+            line-height: 22px;
+            width: 265px;
+            text-align: left;
+          }
+          .iconLine {
+            display: flex;
+            flex-direction: initial;
+            justify-content: flex-end;
+            .icon {
+              width: 18px;
+              height: 18px;
+              padding: 10px;
+            }
+          }
+          .capsule {
+            padding: 2px 10px;
+            margin-right: 10px;
+            font-family: Poppins;
+            background-color: #f6c937;
+            border-radius: 11.5px;
+            width: 114px;
+            height: 23px;
+            color: #ffffff;
+            font-family: OpenSans;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: left;
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      .cardWrapper {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
